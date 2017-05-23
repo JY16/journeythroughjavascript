@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p, h2, h3, a {
+    font-family: 'Crimson Text', serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p, a {
+    font-size: 1.2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+header p {
+    color: #2aa1c0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+.flexNav {
+    background-color: rgba(178, 0, 0, 0.9);
+    height: 40vh;
+    display: none;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1.2rem;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    order: -1;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.flexNav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.flexNav a:hover {
+    color: #0e647d;
+}
+
+.nav-button {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #2aa1c0;
+    order: -1;
+    align-self: flex-end;
+    margin-bottom: .5em;
+}
+
+.menu-toggle {
+    padding: 1em;
+    background-color: #b20000;
+    color: #e6e6e6;
+    border: none;
+    font-size: 1em;
+}
+
+.open nav {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/***********************************************************************************************************************
+                                                   Home Page Styles
+***********************************************************************************************************************/
+.inner-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*//* messes up aside on larger screens; 1200px on chrome and edge */
+}
+
+section {
+    width: 90%;
+    align-self: center;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article p {
+    text-indent: 1.5em;
+    line-height: 1.9;
+}
+
+.article a {
+    color: #6a0000;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+}
+
+.article a:hover {
+    color: #2aa1c0;
+}
+
+aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6a0000;
+}
+
+/*********************************************
+                Aside Social
+ ********************************************/
+
+.social-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .5em;
+    border: 2px solid #fff;
+    transition: all .5s ease-in-out;
+}
+
+.social:last-of-type {
+    margin-right: 0;
+}
+
+.social i {
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.social:hover i {
+    color: #0e647d;
+}
+
+.social:hover {
+    border: 2px solid #0e647d;
+}
+
+/*********************************************
+                Aside Articles
+*********************************************/
+
+.related {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.related a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.related a:hover {
+    color: #2aa1c0;
+}
+
+/***********************************************************************************************************************
+                                                   About Page Styles
+***********************************************************************************************************************/
+.about {
+    width: 90%;
+}
+
+.about p {
+    text-indent: 1.5em;
+    line-height: 1.9;
+}
+
+/***********************************************************************************************************************
+                                                   Articles Page Styles
+***********************************************************************************************************************/
+.categories {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.art-cate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*********************************************
+                    Footer
+ ********************************************/
+
+footer {
+    width: 100%;
+    color: #e6e6e6;
+    background-color: #000;
+    text-align: center;
+    height: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/***********************************************************************************************************************
+                                           Media Queries
+***********************************************************************************************************************/
+
+@media (min-width: 1024px) {
+/****************************************
+            Nav Media Query
+****************************************/
+    .menu-toggle {
+        display: none;
+    }
+
+    .flexNav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #222222;
+        height: 2.7em;
+        order: 0;
+    }
+
+    .flexNav a {
+        color: #e6e6e6;
+        text-decoration: none;
+        margin: 1em;
+    }
+
+    .flexNav .current {
+        color: #2aa1c0;
+    }
+
+    .flexNav a:hover {
+        color: #2aa1c0;
+    }
+}
+
+@media (min-width: 1200px) {
+    section, .about {
+        width: 60%;
+    }
+/****************************************
+          Home Media Query
+****************************************/
+    .inner-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85%;
+    }
+
+    section {
+        margin-top: 2em;
+
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+    }
+
+    .aside-sec {
+        position: fixed;
+        height: auto;
+    }
+}
