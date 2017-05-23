@@ -114,7 +114,6 @@ header p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;*//* messes up aside on larger screens; 1200px on chrome and edge */
 }
 
 section {
