@@ -141,6 +141,15 @@ section {
 
 .article a:hover {
     color: #2aa1c0;
+    text-decoration: underline;
+}
+
+.rd-more {
+    text-align: right;
+}
+
+.rd-more a {
+    margin-right: .3em;
 }
 
 aside {
