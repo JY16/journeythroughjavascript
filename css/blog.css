@@ -229,6 +229,12 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center; }
+.art-cate a {
+   color: #6a0000;
+}
+.art-cate:hover {
+   color: #2aa1c0;
+ }
 .inner-wrapper .related h3 {
   color: #e6e6e6; }
 .inner-wrapper .related div {
