@@ -229,12 +229,11 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center; }
-.categories .article a {
-   color: #6a0000;
-}
-.categories .article a:hover {
-   color: #2aa1c0;
- }
+.inner-wrapper .categories .art-cate a {
+      color: #6a0000;
+      text-decoration: none; }
+      .inner-wrapper .categories .art-cate a:hover {
+        color: #2aa1c0; }
 .inner-wrapper .related h3 {
   color: #e6e6e6; }
 .inner-wrapper .related div {
