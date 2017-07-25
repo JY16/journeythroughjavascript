@@ -229,10 +229,10 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center; }
-.art-cate a {
+.categories .article a {
    color: #6a0000;
 }
-.art-cate:hover {
+.categories .article a:hover {
    color: #2aa1c0;
  }
 .inner-wrapper .related h3 {
